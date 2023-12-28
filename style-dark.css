@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Roboto:wght@800&display=swap');
+/* Seção de variáveis */
+
+:root {
+    --cor-back-fundo: #242424;
+    --cor-back-front: #383838;
+    --cor-fakebook: #577ccc;
+    --cor-destaque1: #fff;
+    --cor-destaque2: #a3a3a3;
+    --tamanho-fonte-principal: 16px;
+    --tamanho-fonte-secundaria: 12px;
+  }
+  
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.main{
+    margin-left: -50px;
+}
+
+body{
+    background-color: var(--cor-back-fundo);
+    font-family: 'Roboto', sans-serif;
+}
+
+.logo{
+    margin: 0 auto;
+    letter-spacing: -0.18em
+}
+
+.logo img{
+    height: 55px;
+    padding: 30px 20px;
+    opacity: 0.85;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding-top: 100px;
+    margin-bottom: 50px;
+}
+
+.form-right{
+    display: flex;
+    flex-direction:column;
+    margin: 30px 0;
+}
+
+.container-login{
+    display: flex;
+    flex-direction:column;
+    text-align: center;
+    border: 1px solid var(--cor-back-front);
+    border-radius: 2px;
+    padding: 30px 20px;
+}
+
+.container-login form input{
+    margin : 0 auto;
+    width: 230px;
+    border-style: none;
+    margin: 0 2px;
+}
+
+input{
+    background-color: #fafafa;
+}
+
+.container-login form label{
+    color: #7f7f7f;
+    padding-top: 1px;
+    padding-left: 6px;
+    font-size: 11px;
+    letter-spacing: -0.04em
+}
+
+.input-email{
+    display: flex;
+    flex-direction: column;
+    margin: 5px 30px;
+    border: 1px solid var(--cor-back-front);
+    width: 230px;
+    padding: 2px;
+    text-align: left;
+    font-size: smaller;
+    border-radius: 5px;
+    background-color: #fafafa;
+}
+
+.input-senha{
+    display: flex;
+    flex-direction: column;
+    margin: 12px 30px;
+    border: 1px solid #c4c3c3;
+    width: 230px;
+    padding: 2px;
+    text-align: left;
+    font-size: smaller;
+    border-radius: 5px;
+    background-color: #fafafa;
+}
+
+#btn-blue{
+    position: relative;
+    background-color: #0095f6;
+    padding: 8px 0px;
+    width: 240px;
+    border-radius: 8px;
+    color: white;
+    font-size: 13px;
+    font-weight: 700;
+}
+.sep-ou{
+    position: relative;
+}
+.sep-ou span{
+    position: absolute;
+    text-transform: uppercase;
+    width: 50px;
+    top: 16px;
+    margin-left: -25px;
+    font-size: 14px;
+    background-color: var(--cor-back-fundo);
+    color: var(--cor-destaque2);
+}
+
+.line{
+    border-top: 1px solid var(--cor-back-front);
+    width: 268px;
+    margin: 25px auto 35px;
+}
+
+.btn-face {
+    padding-bottom: 20px;
+}
+
+.btn-face a{
+    text-decoration: none;
+    color: var(--cor-fakebook);
+    font-weight: bolder;
+    font-size: 14px;
+}
+
+.btn-face i{
+    font-size: 19px;
+}
+
+.esqueceu-pass a{
+    text-decoration: none;
+    color: var(--cor-fakebook);
+    font-size: 12px;
+}
+
+.sem-conta{
+    margin-top: 12px;
+    border: 1px solid var(--cor-back-front);
+    border-radius: 2px;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction:column;
+    text-align: center;
+    width: 300px;
+}
+
+.sem-conta p{
+    color: var(--cor-destaque1);
+    font-size: 14px;
+}
+
+.sem-conta a{
+    color: #0095f6;
+    font-size: 14px;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.obtenha-app{
+    padding: 20px 10px;
+    display: flex;
+    flex-direction:column;
+    text-align: center;
+    width: 300px;
+    font-size: 14px;
+    color: var(--cor-destaque1);
+}
+
+.redes-img{
+    display: flex;
+    flex-direction:row;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.redes-img img{
+    margin: 0 auto;
+    height: 40px;
+    padding: 10px;
+}
+
+.foo-words{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    font-size: smaller;
+}
+
+.foo-words a{
+    color: var(--cor-destaque2);
+    text-decoration: none;
+    padding: 8px;
+}
+
+footer{
+    margin: 0 50px;
+}
+
+@media (max-width: 890px) {
+    .img-left {
+      display: none;
+    }
+    .foo-words{
+        flex-wrap:wrap;
+    }
+    footer{
+        margin: 0 100px;
+    }
+  }
