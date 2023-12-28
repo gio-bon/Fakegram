@@ -102,10 +102,24 @@ input{
     font-size: 13px;
     font-weight: 700;
 }
-
 .sep-ou{
-    margin-top: 12px;
-    margin-bottom: 18px;
+    position: relative;
+}
+.sep-ou span{
+    position: absolute;
+    text-transform: uppercase;
+    width: 50px;
+    top: 16px;
+    margin-left: -25px;
+    font-size: 14px;
+    background-color: white;
+    color: #757575;
+}
+
+.line{
+    border-top: 1px solid #c4c3c3;
+    width: 268px;
+    margin: 25px auto 35px;
 }
 
 .btn-face {
